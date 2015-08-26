@@ -1,0 +1,31 @@
+---
+title: "Call summary() on each dataset"
+output: 
+  html_document:
+    self_contained: no
+---
+
+
+```{r, echo=FALSE}
+filenames <- list.files("competition_data/")
+filepath <- "competition_data"
+for(filename in filenames) {
+  
+  # Strip the .csv from the filename, which is what we'll use to name the table
+  oname <- strsplit(filename, ".csv")[[1]]
+  fpath <- paste(filepath, "/", filename, sep="")
+  expression <- paste("summary(",oname, "<- read.csv('", fpath, "'))", sep="")
+  
+  cat(" ")
+  cat(oname)
+  cat("\n  \n")
+  # Evaluate our string expression
+  print(eval(parse(text = expression)))
+  cat("\n\n\n\n")
+  
+}
+```
+
+
+
+
