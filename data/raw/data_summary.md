@@ -1,72 +1,9 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
+# Call summary() on each dataset
 
 
 
-<title>Call summary() on each dataset</title>
-
-<script src="data_summary_files/jquery-1.11.0/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="data_summary_files/bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-<script src="data_summary_files/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="data_summary_files/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="data_summary_files/bootstrap-3.3.1/shim/respond.min.js"></script>
-
-<style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="data_summary_files/highlight/default.css"
-      type="text/css" />
-<script src="data_summary_files/highlight/highlight.js"></script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
-
-
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img { 
-  max-width:100%; 
-  height: auto; 
-}
-</style>
-<div class="container-fluid main-container">
-
-
-<div id="header">
-<h1 class="title">Call summary() on each dataset</h1>
-</div>
-
-
-<pre><code>##  bill_of_materials
+```
+##  bill_of_materials
 ##   
 ##  tube_assembly_id component_id_1    quantity_1   component_id_2
 ##  TA-00001:    1   C-1621 : 2043   Min.   :1.00   C-1628 :1959  
@@ -75,7 +12,7 @@ img {
 ##  TA-00004:    1   C-1623 : 1414   Mean   :1.56   C-1630 :1375  
 ##  TA-00005:    1   C-1312 : 1240   3rd Qu.:2.00   C-1846 : 907  
 ##  TA-00006:    1   (Other):11138   Max.   :6.00   (Other):7402  
-##  (Other) :21192   NA&#39;s   : 2049   NA&#39;s   :2049   NA&#39;s   :6412  
+##  (Other) :21192   NA's   : 2049   NA's   :2049   NA's   :6412  
 ##    quantity_2    component_id_3    quantity_3    component_id_4 
 ##  Min.   :1.000   C-1641 :  421   Min.   :1.000   C-1660 :   62  
 ##  1st Qu.:1.000   C-1639 :  407   1st Qu.:1.000   C-1655 :   38  
@@ -83,7 +20,7 @@ img {
 ##  Mean   :1.526   C-1647 :  309   Mean   :1.021   C-1661 :   31  
 ##  3rd Qu.:2.000   C-1640 :  232   3rd Qu.:1.000   C-1654 :   27  
 ##  Max.   :6.000   (Other): 3036   Max.   :4.000   (Other):  417  
-##  NA&#39;s   :6412    NA&#39;s   :16407   NA&#39;s   :16400   NA&#39;s   :20591  
+##  NA's   :6412    NA's   :16407   NA's   :16400   NA's   :20591  
 ##    quantity_4    component_id_5    quantity_5    component_id_6 
 ##  Min.   :1.000   C-0872 :   10   Min.   :1.000   C-0378 :    3  
 ##  1st Qu.:1.000   C-0348 :    6   1st Qu.:1.000   C-0923 :    3  
@@ -91,15 +28,15 @@ img {
 ##  Mean   :1.028   C-0214 :    3   Mean   :1.033   C-1639 :    2  
 ##  3rd Qu.:1.000   C-0890 :    3   3rd Qu.:1.000   C-1920 :    2  
 ##  Max.   :4.000   (Other):   64   Max.   :2.000   (Other):   14  
-##  NA&#39;s   :20590   NA&#39;s   :21106   NA&#39;s   :21106   NA&#39;s   :21172  
+##  NA's   :20590   NA's   :21106   NA's   :21106   NA's   :21172  
 ##    quantity_6    component_id_7   quantity_7    component_id_8
 ##  Min.   :1.000   C-0355:    1   Min.   :1       C-1981:    1  
-##  1st Qu.:1.000   C-0968:    1   1st Qu.:1       NA&#39;s  :21197  
+##  1st Qu.:1.000   C-0968:    1   1st Qu.:1       NA's  :21197  
 ##  Median :1.000   C-1019:    3   Median :1                     
 ##  Mean   :1.154   C-1921:    2   Mean   :1                     
-##  3rd Qu.:1.000   NA&#39;s  :21191   3rd Qu.:1                     
+##  3rd Qu.:1.000   NA's  :21191   3rd Qu.:1                     
 ##  Max.   :2.000                  Max.   :1                     
-##  NA&#39;s   :21172                  NA&#39;s   :21191                 
+##  NA's   :21172                  NA's   :21191                 
 ##    quantity_8   
 ##  Min.   :1      
 ##  1st Qu.:1      
@@ -107,7 +44,7 @@ img {
 ##  Mean   :1      
 ##  3rd Qu.:1      
 ##  Max.   :1      
-##  NA&#39;s   :21197  
+##  NA's   :21197  
 ## 
 ## 
 ## 
@@ -121,23 +58,23 @@ img {
 ##  C-0361 : 1                      Mean   :90    Mean   :29.54  
 ##  C-0428 : 1                      3rd Qu.:90    3rd Qu.:37.23  
 ##  C-0443 : 1                      Max.   :90    Max.   :58.40  
-##  (Other):19                      NA&#39;s   :24    NA&#39;s   :1      
+##  (Other):19                      NA's   :24    NA's   :1      
 ##  end_form_id_1 connection_type_id_1    length_1    thread_size_1   
 ##  A-001: 9      B-001: 2             Min.   :65.5   Min.   :0.1250  
 ##  A-002: 1      B-004:11             1st Qu.:65.5   1st Qu.:0.3750  
 ##  A-005: 1      B-005: 4             Median :65.5   Median :0.7500  
 ##  A-007:14      B-006: 1             Mean   :65.5   Mean   :0.6874  
 ##                B-007: 6             3rd Qu.:65.5   3rd Qu.:1.0000  
-##                NA&#39;s : 1             Max.   :65.5   Max.   :1.3120  
-##                                     NA&#39;s   :24     NA&#39;s   :8       
+##                NA's : 1             Max.   :65.5   Max.   :1.3120  
+##                                     NA's   :24     NA's   :8       
 ##  thread_pitch_1  nominal_size_1   end_form_id_2 connection_type_id_2
 ##  Min.   :11.50   Min.   : 3.180   9999 : 2      9999 :4             
 ##  1st Qu.:12.00   1st Qu.: 5.952   A-001:11      B-002:3             
 ##  Median :16.00   Median : 8.730   A-006: 1      B-004:9             
 ##  Mean   :16.88   Mean   : 9.922   A-007:11      B-005:4             
 ##  3rd Qu.:18.00   3rd Qu.:13.495                 B-007:4             
-##  Max.   :27.00   Max.   :19.050                 NA&#39;s :1             
-##  NA&#39;s   :8       NA&#39;s   :17                                         
+##  Max.   :27.00   Max.   :19.050                 NA's :1             
+##  NA's   :8       NA's   :17                                         
 ##     length_2  thread_size_2      thread_pitch_2   nominal_size_2
 ##  Min.   :28   Min.   :   0.125   Min.   :  11.5   Min.   :9.52  
 ##  1st Qu.:28   1st Qu.:   0.438   1st Qu.:  15.0   1st Qu.:9.52  
@@ -145,7 +82,7 @@ img {
 ##  Mean   :28   Mean   : 435.350   Mean   : 451.7   Mean   :9.52  
 ##  3rd Qu.:28   3rd Qu.:   0.938   3rd Qu.:  19.0   3rd Qu.:9.52  
 ##  Max.   :28   Max.   :9999.000   Max.   :9999.0   Max.   :9.52  
-##  NA&#39;s   :24   NA&#39;s   :2          NA&#39;s   :2        NA&#39;s   :23    
+##  NA's   :24   NA's   :2          NA's   :2        NA's   :23    
 ##     hex_size     unique_feature orientation     weight       
 ##  Min.   : 9.40   No :24         No :24      Min.   :0.00500  
 ##  1st Qu.:15.88   Yes: 1         Yes: 1      1st Qu.:0.01200  
@@ -153,7 +90,7 @@ img {
 ##  Mean   :23.03                              Mean   :0.07796  
 ##  3rd Qu.:26.97                              3rd Qu.:0.11550  
 ##  Max.   :44.45                              Max.   :0.25600  
-##  NA&#39;s   :8                                  NA&#39;s   :2        
+##  NA's   :8                                  NA's   :2        
 ## 
 ## 
 ## 
@@ -163,7 +100,7 @@ img {
 ##   component_id component_type_id   type     connection_type_id
 ##  C-0008 :  1   CP-018:124        Boss:104   B-005  :60        
 ##  C-0009 :  1   CP-019: 17        Stud: 20   B-004  :31        
-##  C-0020 :  1   CP-020:  6        NA&#39;s: 23   B-002  :21        
+##  C-0020 :  1   CP-020:  6        NA's: 23   B-002  :21        
 ##  C-0054 :  1                                B-012  :15        
 ##  C-0071 :  1                                9999   : 9        
 ##  C-0082 :  1                                B-009  : 8        
@@ -171,11 +108,11 @@ img {
 ##  outside_shape       base_type  height_over_tube  bolt_pattern_long
 ##  Hex  :  8     Flat Bottom:13   Min.   :   4.76   Min.   : 57.15   
 ##  Round:116     Saddle     :81   1st Qu.:  15.57   1st Qu.: 76.20   
-##  NA&#39;s : 23     Shoulder   :30   Median :  18.80   Median : 77.80   
-##                NA&#39;s       :23   Mean   :  88.24   Mean   : 83.77   
+##  NA's : 23     Shoulder   :30   Median :  18.80   Median : 77.80   
+##                NA's       :23   Mean   :  88.24   Mean   : 83.77   
 ##                                 3rd Qu.:  24.00   3rd Qu.: 91.45   
 ##                                 Max.   :9999.00   Max.   :120.70   
-##                                                   NA&#39;s   :124      
+##                                                   NA's   :124      
 ##  bolt_pattern_wide groove   base_diameter   shoulder_diameter
 ##  Min.   :27.76     No:147   Min.   :14.00   Min.   :12.24    
 ##  1st Qu.:35.71              1st Qu.:25.00   1st Qu.:18.05    
@@ -183,7 +120,7 @@ img {
 ##  Mean   :47.36              Mean   :29.88   Mean   :23.50    
 ##  3rd Qu.:57.94              3rd Qu.:33.38   3rd Qu.:27.30    
 ##  Max.   :69.90              Max.   :60.00   Max.   :52.37    
-##  NA&#39;s   :130                NA&#39;s   :90      NA&#39;s   :117      
+##  NA's   :130                NA's   :90      NA's   :117      
 ##  unique_feature orientation     weight      
 ##  No :88         Yes:147     Min.   :0.0030  
 ##  Yes:59                     1st Qu.:0.0500  
@@ -191,7 +128,7 @@ img {
 ##                             Mean   :0.3896  
 ##                             3rd Qu.:0.2170  
 ##                             Max.   :4.0340  
-##                             NA&#39;s   :2       
+##                             NA's   :2       
 ## 
 ## 
 ## 
@@ -205,7 +142,7 @@ img {
 ##  C-0018 :  1   CP-011:41         Mean   : 63.62    Mean   :33.24    
 ##  C-0021 :  1   CP-012: 7         3rd Qu.: 69.90    3rd Qu.:35.70    
 ##  C-0022 :  1                     Max.   :152.40    Max.   :92.08    
-##  (Other):172                     NA&#39;s   :7         NA&#39;s   :40       
+##  (Other):172                     NA's   :7         NA's   :40       
 ##  extension_length overall_length     thickness       drop_length     
 ##  Min.   : 16.50   Min.   : 28.00   Min.   :  7.00   Min.   :   7.90  
 ##  1st Qu.: 39.00   1st Qu.: 64.30   1st Qu.: 30.00   1st Qu.:  22.32  
@@ -213,15 +150,15 @@ img {
 ##  Mean   : 48.72   Mean   : 83.25   Mean   : 46.55   Mean   :  89.47  
 ##  3rd Qu.: 54.88   3rd Qu.:100.00   3rd Qu.: 58.75   3rd Qu.:  35.10  
 ##  Max.   :125.00   Max.   :190.55   Max.   :127.70   Max.   :9999.00  
-##  NA&#39;s   :8        NA&#39;s   :3        NA&#39;s   :7        NA&#39;s   :7        
+##  NA's   :8        NA's   :3        NA's   :7        NA's   :7        
 ##   elbow_angle     mj_class_code mj_plug_class_code plug_diameter  
 ##  Min.   : 90.00   MJ-003: 39    MJ-005  : 23       Min.   :25.00  
 ##  1st Qu.: 90.00   MJ-004:  1    MJ-006  :  8       1st Qu.:35.00  
 ##  Median : 90.00   MJ-007:  1    Threaded:  9       Median :50.00  
-##  Mean   : 91.62   NA&#39;s  :137    NA&#39;s    :138       Mean   :50.14  
+##  Mean   : 91.62   NA's  :137    NA's    :138       Mean   :50.14  
 ##  3rd Qu.: 90.00                                    3rd Qu.:65.00  
 ##  Max.   :169.25                                    Max.   :76.00  
-##  NA&#39;s   :48                                        NA&#39;s   :171    
+##  NA's   :48                                        NA's   :171    
 ##  groove    unique_feature orientation     weight      
 ##  No : 68   No :141        No :  7     Min.   : 0.064  
 ##  Yes:110   Yes: 37        Yes:171     1st Qu.: 0.663  
@@ -229,7 +166,7 @@ img {
 ##                                       Mean   : 1.759  
 ##                                       3rd Qu.: 1.884  
 ##                                       Max.   :10.190  
-##                                       NA&#39;s   :2       
+##                                       NA's   :2       
 ## 
 ## 
 ## 
@@ -285,15 +222,15 @@ img {
 ##  C-0097 : 1                      Mean   :29.81   Mean   :38.6  
 ##  C-0102 : 1                      3rd Qu.:35.73   3rd Qu.:37.0  
 ##  C-0134 : 1                      Max.   :57.15   Max.   :45.0  
-##  (Other):59                      NA&#39;s   :23      NA&#39;s   :50    
+##  (Other):59                      NA's   :23      NA's   :50    
 ##      length       thread_size  thread_pitch      diameter      blind_hole
 ##  Min.   : 1.00   M10    :11   Min.   : 1.00   Min.   : 0.625   No  :22   
 ##  1st Qu.:20.00   .812   : 5   1st Qu.:12.00   1st Qu.:17.500   Yes : 1   
-##  Median :24.90   .375   : 4   Median :13.00   Median :20.000   NA&#39;s:42   
+##  Median :24.90   .375   : 4   Median :13.00   Median :20.000   NA's:42   
 ##  Mean   :26.45   .687   : 4   Mean   :11.58   Mean   :19.800             
 ##  3rd Qu.:27.80   1.000  : 4   3rd Qu.:16.00   3rd Qu.:25.000             
 ##  Max.   :90.00   1.187  : 4   Max.   :20.00   Max.   :30.000             
-##                  (Other):33                   NA&#39;s   :42                 
+##                  (Other):33                   NA's   :42                 
 ##  orientation     weight       
 ##  No:65       Min.   :0.00900  
 ##              1st Qu.:0.02700  
@@ -301,7 +238,7 @@ img {
 ##              Mean   :0.07709  
 ##              3rd Qu.:0.10925  
 ##              Max.   :0.34300  
-##              NA&#39;s   :1        
+##              NA's   :1        
 ## 
 ## 
 ## 
@@ -315,7 +252,7 @@ img {
 ##  C-0025 :  1   ADAPTER: 53   Mean   : 0.8403  
 ##  C-0026 :  1   BOSS   : 41   3rd Qu.: 0.8290  
 ##  C-0031 :  1   ELBOW  : 34   Max.   :13.7700  
-##  (Other):995   (Other):530   NA&#39;s   :56       
+##  (Other):995   (Other):530   NA's   :56       
 ## 
 ## 
 ## 
@@ -359,15 +296,15 @@ img {
 ##  C-0019 :  1   CP-004:85         Mean   : 71.78    Mean   : 40.84   
 ##  C-0029 :  1   CP-005: 2         3rd Qu.: 79.40    3rd Qu.: 50.80   
 ##  C-0036 :  1   CP-006:45         Max.   :158.80    Max.   :120.00   
-##  (Other):355   CP-007:25         NA&#39;s   :70        NA&#39;s   :157      
+##  (Other):355   CP-007:25         NA's   :70        NA's   :157      
 ##  head_diameter    overall_length    thickness     mj_class_code groove   
 ##  Min.   : 38.00   Min.   :12.70   Min.   : 3.76   MJ-001: 46    No :160  
 ##  1st Qu.: 45.24   1st Qu.:19.50   1st Qu.:10.00   MJ-002:  2    Yes:201  
 ##  Median : 50.80   Median :28.00   Median :18.00   MJ-003: 71             
 ##  Mean   : 58.41   Mean   :27.91   Mean   :21.19   MJ-007:  1             
-##  3rd Qu.: 65.33   3rd Qu.:30.00   3rd Qu.:28.00   NA&#39;s  :241             
+##  3rd Qu.: 65.33   3rd Qu.:30.00   3rd Qu.:28.00   NA's  :241             
 ##  Max.   :127.00   Max.   :52.00   Max.   :65.00                          
-##  NA&#39;s   :291      NA&#39;s   :320                                            
+##  NA's   :291      NA's   :320                                            
 ##  unique_feature orientation     weight      
 ##  No :331        No : 70     Min.   :0.0010  
 ##  Yes: 30        Yes:291     1st Qu.:0.2000  
@@ -375,7 +312,7 @@ img {
 ##                             Mean   :0.8135  
 ##                             3rd Qu.:1.2007  
 ##                             Max.   :9.6930  
-##                             NA&#39;s   :7       
+##                             NA's   :7       
 ## 
 ## 
 ## 
@@ -423,7 +360,7 @@ img {
 ##  C-0043 :  1   CP-017:  1        Mean   :89.17   Mean   :40.09  
 ##  C-0044 :  1                     3rd Qu.:90.00   3rd Qu.:48.40  
 ##  C-0069 :  1                     Max.   :90.00   Max.   :80.00  
-##  (Other):188                     NA&#39;s   :140     NA&#39;s   :73     
+##  (Other):188                     NA's   :140     NA's   :73     
 ##     hex_size     end_form_id_1 connection_type_id_1    length_1    
 ##  Min.   :12.70   A-001:85      B-002  :96           Min.   :15.88  
 ##  1st Qu.:22.22   A-003:20      B-001  :24           1st Qu.:30.55  
@@ -431,7 +368,7 @@ img {
 ##  Mean   :31.63   A-005:17      B-006  : 4           Mean   :39.57  
 ##  3rd Qu.:38.10   A-006:31      B-004  : 2           3rd Qu.:43.00  
 ##  Max.   :76.20   A-007: 2      (Other): 2           Max.   :71.10  
-##  NA&#39;s   :82                    NA&#39;s   :59           NA&#39;s   :121    
+##  NA's   :82                    NA's   :59           NA's   :121    
 ##  thread_size_1   thread_pitch_1  nominal_size_1 end_form_id_2
 ##  Min.   :0.437   Min.   : 8.00   25.40  : 13    A-001: 47    
 ##  1st Qu.:0.812   1st Qu.:12.00   21.7   :  8    A-003: 13    
@@ -439,63 +376,69 @@ img {
 ##  Mean   :1.054   Mean   :13.94   34     :  5    A-005:  9    
 ##  3rd Qu.:1.187   3rd Qu.:16.00   15.88  :  4    A-006:  5    
 ##  Max.   :2.500   Max.   :20.00   (Other): 25    A-007:  2    
-##  NA&#39;s   :59      NA&#39;s   :59      NA&#39;s   :134                 
+##  NA's   :59      NA's   :59      NA's   :134                 
 ##  connection_type_id_2    length_2     thread_size_2   thread_pitch_2 
 ##  B-001:  7            Min.   : 0.00   Min.   :0.437   Min.   :12.00  
 ##  B-002: 53            1st Qu.:28.00   1st Qu.:0.812   1st Qu.:12.00  
 ##  B-005:  3            Median :35.50   Median :1.187   Median :12.00  
-##  NA&#39;s :131            Mean   :34.08   Mean   :1.123   Mean   :13.46  
+##  NA's :131            Mean   :34.08   Mean   :1.123   Mean   :13.46  
 ##                       3rd Qu.:41.40   3rd Qu.:1.437   3rd Qu.:16.00  
 ##                       Max.   :61.20   Max.   :2.000   Max.   :20.00  
-##                       NA&#39;s   :121     NA&#39;s   :131     NA&#39;s   :131    
+##                       NA's   :121     NA's   :131     NA's   :131    
 ##  nominal_size_2    end_form_id_3 connection_type_id_3    length_3    
 ##  Min.   :   6.35   A-001:  9     B-002: 10            Min.   :14.50  
-##  1st Qu.:  15.88   A-003:  1     NA&#39;s :184            1st Qu.:25.91  
+##  1st Qu.:  15.88   A-003:  1     NA's :184            1st Qu.:25.91  
 ##  Median :  19.05   A-004:  8                          Median :37.00  
 ##  Mean   :  96.77   A-006:  1                          Mean   :35.51  
-##  3rd Qu.:  25.40   NA&#39;s :175                          3rd Qu.:41.70  
+##  3rd Qu.:  25.40   NA's :175                          3rd Qu.:41.70  
 ##  Max.   :9999.00                                      Max.   :71.20  
-##  NA&#39;s   :63                                           NA&#39;s   :175    
+##  NA's   :63                                           NA's   :175    
 ##  thread_size_3   thread_pitch_3 nominal_size_3    end_form_id_4
 ##  Min.   :0.812   Min.   :12.0   Min.   :   9.52   A-001:  1    
-##  1st Qu.:1.047   1st Qu.:12.0   1st Qu.:  15.88   NA&#39;s :193    
+##  1st Qu.:1.047   1st Qu.:12.0   1st Qu.:  15.88   NA's :193    
 ##  Median :1.312   Median :12.0   Median :  15.88                
 ##  Mean   :1.262   Mean   :12.8   Mean   :1128.81                
 ##  3rd Qu.:1.437   3rd Qu.:13.5   3rd Qu.:  30.00                
 ##  Max.   :1.687   Max.   :16.0   Max.   :9999.00                
-##  NA&#39;s   :184     NA&#39;s   :184    NA&#39;s   :185                    
+##  NA's   :184     NA's   :184    NA's   :185                    
 ##  connection_type_id_4    length_4    thread_size_4   thread_pitch_4
 ##  B-002:  1            Min.   :41.7   Min.   :1.187   Min.   :12    
-##  NA&#39;s :193            1st Qu.:41.7   1st Qu.:1.187   1st Qu.:12    
+##  NA's :193            1st Qu.:41.7   1st Qu.:1.187   1st Qu.:12    
 ##                       Median :41.7   Median :1.187   Median :12    
 ##                       Mean   :41.7   Mean   :1.187   Mean   :12    
 ##                       3rd Qu.:41.7   3rd Qu.:1.187   3rd Qu.:12    
 ##                       Max.   :41.7   Max.   :1.187   Max.   :12    
-##                       NA&#39;s   :193    NA&#39;s   :193     NA&#39;s   :193   
+##                       NA's   :193    NA's   :193     NA's   :193   
 ##  nominal_size_4 unique_feature orientation     weight      
 ##  Mode:logical   No :161        No :121     Min.   :0.0050  
-##  NA&#39;s:194       Yes: 33        Yes: 73     1st Qu.:0.0960  
+##  NA's:194       Yes: 33        Yes: 73     1st Qu.:0.0960  
 ##                                            Median :0.1750  
 ##                                            Mean   :0.2566  
 ##                                            3rd Qu.:0.3510  
 ##                                            Max.   :1.1700  
-##                                            NA&#39;s   :1       
+##                                            NA's   :1       
 ## 
 ## 
 ## 
 ## 
 ##  components
-## </code></pre>
-<pre><code>## Warning in scan(file, what, nmax, sep, dec, quote, skip, nlines,
-## na.strings, : EOF within quoted string</code></pre>
-<pre><code>##   component_id      name     component_type_id
+## 
+```
+
+```
+## Warning in scan(file, what, nmax, sep, dec, quote, skip, nlines,
+## na.strings, : EOF within quoted string
+```
+
+```
+##   component_id      name     component_type_id
 ##  9999   :  1   FLANGE :132   OTHER  :318      
 ##  C-0001 :  1   BOSS   : 45   CP-018 : 58      
 ##  C-0002 :  1   ELBOW  : 41   CP-014 : 42      
 ##  C-0003 :  1   TUBE   : 40   CP-003 : 36      
 ##  C-0004 :  1   PLATE  : 37   CP-004 : 28      
 ##  C-0005 :  1   (Other):401   CP-008 : 27      
-##  (Other):691   NA&#39;s   :  1   (Other):188      
+##  (Other):691   NA's   :  1   (Other):188      
 ## 
 ## 
 ## 
@@ -509,7 +452,7 @@ img {
 ##  TA-00004:    1   SP-0004:  637   SP-0069:  683   SP-0070:  302  
 ##  TA-00005:    1   SP-0058:  379   SP-0070:  633   SP-0022:  246  
 ##  TA-00006:    1   (Other):  984   (Other): 2022   (Other): 1176  
-##  (Other) :21192   NA&#39;s   :14069   NA&#39;s   :14354   NA&#39;s   :15358  
+##  (Other) :21192   NA's   :14069   NA's   :14354   NA's   :15358  
 ##      spec4           spec5           spec6           spec7      
 ##  SP-0026: 1492   SP-0080: 1780   SP-0082: 1167   SP-0082:  322  
 ##  SP-0080: 1150   SP-0026:  378   SP-0080:  569   SP-0080:  116  
@@ -517,13 +460,13 @@ img {
 ##  SP-0082:  324   SP-0050:   98   SP-0079:   54   SP-0083:    4  
 ##  SP-0063:  145   SP-0079:   65   SP-0063:   13   SP-0070:    3  
 ##  (Other):  648   (Other):  277   (Other):   75   (Other):   10  
-##  NA&#39;s   :17044   NA&#39;s   :18277   NA&#39;s   :19127   NA&#39;s   :20663  
+##  NA's   :17044   NA's   :18277   NA's   :19127   NA's   :20663  
 ##      spec8           spec9           spec10     
 ##  SP-0062:    1   SP-0070:    1   SP-0080:    1  
-##  SP-0080:    7   SP-0082:    1   NA&#39;s   :21197  
+##  SP-0080:    7   SP-0082:    1   NA's   :21197  
 ##  SP-0082:   73   SP-0088:   18                  
-##  SP-0088:   25   NA&#39;s   :21178                  
-##  NA&#39;s   :21092                                  
+##  SP-0088:   25   NA's   :21178                  
+##  NA's   :21092                                  
 ##                                                 
 ##                                                 
 ## 
@@ -583,7 +526,7 @@ img {
 ##  TA-00004:    1   SP-0039:  970   Mean   : 23.69   Mean   :1.578  
 ##  TA-00005:    1   SP-0019:  926   3rd Qu.: 25.40   3rd Qu.:1.650  
 ##  TA-00006:    1   (Other): 2215   Max.   :203.20   Max.   :7.900  
-##  (Other) :21192   NA&#39;s   :  279                                   
+##  (Other) :21192   NA's   :  279                                   
 ##      length         num_bends       bend_radius      end_a_1x  end_a_2x 
 ##  Min.   :   0.0   Min.   : 0.000   Min.   :   0.00   N:20118   N:18015  
 ##  1st Qu.:  48.0   1st Qu.: 2.000   1st Qu.:  19.05   Y: 1080   Y: 3183  
@@ -663,29 +606,9 @@ img {
 ##  A-003  :1    Male (Stud)      :1  
 ##  A-004  :1    Male (Swivel)    :1  
 ##  A-005  :1    Other            :1  
-##  (Other):2    (Other)          :2</code></pre>
+##  (Other):2    (Other)          :2
+```
 
 
-</div>
 
-<script>
 
-// add bootstrap table styles to pandoc tables
-$(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
-</script>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
